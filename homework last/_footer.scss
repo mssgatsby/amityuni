@@ -1,0 +1,107 @@
+footer{
+    background-color: #002B49;
+    padding: 50px 10px;
+    .container{
+        .block{
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            color: #fff;
+            .logo{
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                img{
+                    width: 200px;
+                }
+            }
+            ul{
+                h1{
+                    font-size: 20px;
+                    color: #FFC600;
+                    &::after{
+                        content: '';
+                        width: 100%;
+                        color: #FFC600;
+                        background-color: #FFC600;
+                        height: 1px;
+                        display: block;
+                    margin-top: 10px;
+                        
+                    }
+                }
+                li{
+                    padding: 6px 0;
+                }
+            }
+        }
+
+        .links{
+            display: flex;
+            color: #FFC600;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .link{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-size: 20px;
+                i{
+                    padding: 15px;
+                    border-radius: 50%;
+                    border: 2px solid #FFC600;
+                }
+            }
+
+            &::before{
+                content: '';
+                        width: 100%;
+                        color: #FFC600;
+                        background-color: #FFC600;
+                        height: 1px;
+                        display: block;
+                    margin-bottom: 20px;
+
+            }
+            &::after{
+                content: '';
+                        width: 100%;
+                        color: #FFC600;
+                        background-color: #FFC600;
+                        height: 1px;
+                        display: block;
+                    margin-top: 20px;
+
+            }
+
+        }
+        &>p{
+            text-align: center;
+        }
+        
+
+    }
+}
+
+@media(max-width:900px){
+    footer{
+        .container{
+            .block{
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+}
+@media(max-width:450px){
+    footer{
+        .container{
+            .block{
+                grid-template-columns: 1fr;
+                gap: 20px;
+                .logo{
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}

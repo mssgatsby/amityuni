@@ -1,0 +1,41 @@
+$mainFont: 'Cormorant', serif;
+$blue: #002B49;
+$yellow:#FFC600;
+@import "./navbar";
+@import "./footer";
+@import "./mainabout";
+@mixin button{
+    background-color: $yellow;
+    border-radius: 25px;
+    color: $blue;
+    padding: 10px 20px;
+    font-family: $mainFont;
+    font-weight: bolder;
+    font-size: 20px;
+    border: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul li{
+    list-style: none;
+}
+button{
+    cursor: pointer;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1280px;
+}
+h1, h2, h3{
+    color: inherit;
+    font-family: $mainFont;
+    font-weight: bolder;
+}

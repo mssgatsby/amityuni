@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../../aboutus/.vscode"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "homework last"
+  }
+}
